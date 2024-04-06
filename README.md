@@ -16,7 +16,7 @@ This project was created using VS Code, python & GitHub.
 Within the python code we are importing 3 modules at the beginning of the notebook to use throughout.
 #### pandas:
 Within the *penguins.ipynb* project the pandas library is used to read in the data from the palmers penguins dataset. 
-The corr() method is used in calculating the correlation coefficient of the variables flipper length and body mass in the dataset[^1].
+The corr() method is used in calculating the correlation coefficient of the variables flipper length and body mass in the dataset.[^1]
 
 https://aaltoscicomp.github.io/python-for-scicomp/pandas/
 https://pandas.pydata.org/docs/user_guide/10min.html#min
@@ -25,17 +25,17 @@ https://pandas.pydata.org/docs/user_guide/10min.html#min
 The matplotlib.pyplot libray is used mainly for visual representation of dataset.
 The use of this library enables the user to create many types of plots including bar charts, histograms, line plots and scatter plot, all of which are displayed within the *penguins.ipynb* project.  
 With matplotlib.pyplot the user also has the possibility to save the graphs created by the program. 
-The user is also enabled to customize the charts to their liking with options to switch up the colour[^2], markers[^3], labels and titles[^4] of the plots.
+The user is also enabled to customize the charts to their liking with options to switch up the colour,[^2] markers,[^3] labels and titles[^4] of the plots.
 
 https://www.datacamp.com/tutorial/line-plots-in-matplotlib-with-python
 
 #### numpy
 Numpy is a widely known Python libary in part for it's ability to facilitates basic and advanced arithmetic operations on large numbers of data and also for it's random number generating functionality.  When working with datasets numpy is useful due to it's ability to handle arrays and swiftly perform operations on them; like mathematical calution and sorting. [^5]
 
-[^1] https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
-[^2] https://matplotlib.org/stable/users/explain/colors/colors.html  
-[^3] https://matplotlib.org/2.0.2/api/markers_api.html  
-[^4] https://www.w3schools.com/python/matplotlib_labels.asp  
+[^1] : https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
+[^2] : https://matplotlib.org/stable/users/explain/colors/colors.html  
+[^3] : https://matplotlib.org/2.0.2/api/markers_api.html  
+[^4] : https://www.w3schools.com/python/matplotlib_labels.asp  
 [^5]: More information can be found at https://numpy.org/devdocs/user/
 
 
