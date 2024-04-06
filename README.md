@@ -32,10 +32,10 @@ https://www.datacamp.com/tutorial/line-plots-in-matplotlib-with-python
 #### numpy
 Numpy is a widely known Python libary in part for it's ability to facilitates basic and advanced arithmetic operations on large numbers of data and also for it's random number generating functionality.  When working with datasets numpy is useful due to it's ability to handle arrays and swiftly perform operations on them; like mathematical calution and sorting. [^5]
 
-[^1] : https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
-[^2] : https://matplotlib.org/stable/users/explain/colors/colors.html  
-[^3] : https://matplotlib.org/2.0.2/api/markers_api.html  
-[^4] : https://www.w3schools.com/python/matplotlib_labels.asp  
+[^1]: https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
+[^2]: https://matplotlib.org/stable/users/explain/colors/colors.html  
+[^3]: https://matplotlib.org/2.0.2/api/markers_api.html  
+[^4]: https://www.w3schools.com/python/matplotlib_labels.asp  
 [^5]: More information can be found at https://numpy.org/devdocs/user/
 
 
