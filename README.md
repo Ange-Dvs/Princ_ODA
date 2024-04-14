@@ -19,6 +19,8 @@ Within the *penguins.ipynb* project the pandas library is used to read in the da
 The corr() method is used in calculating the correlation coefficient of the variables flipper length and body mass in the dataset.[^1]
 groupby() method
 unstack() - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.unstack.html#pandas.DataFrame.unstack
+.isna().sum() 
+.get()
 
 https://aaltoscicomp.github.io/python-for-scicomp/pandas/
 https://pandas.pydata.org/docs/user_guide/10min.html#min
@@ -39,8 +41,14 @@ https://www.datacamp.com/tutorial/line-plots-in-matplotlib-with-python
 #### numpy
 Numpy is a widely known Python libary in part for it's ability to facilitates basic and advanced arithmetic operations on large numbers of data and also for it's random number generating functionality.  When working with datasets numpy is useful due to it's ability to handle arrays and swiftly perform operations on them; like mathematical calution and sorting.[^5]  
 size method()
+.to_numpy()
+
 
 https://www.geeksforgeeks.org/numpy-size-function-python/
+
+#### tabulate
+
+
 
 ## Project run through
 
