@@ -21,6 +21,7 @@ groupby() method
 unstack() - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.unstack.html#pandas.DataFrame.unstack
 .isna().sum() 
 .get()
+.std()
 
 https://aaltoscicomp.github.io/python-for-scicomp/pandas/
 https://pandas.pydata.org/docs/user_guide/10min.html#min
