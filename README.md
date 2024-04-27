@@ -1,7 +1,9 @@
 # penguins.ipynb README
 
 ## About this project 
-The *penguins.ipynb* Jupyter notebook contains the project for the Principal of Data Analytics module. 
+The *penguins.ipynb* Jupyter notebook contains the project for the Principal of Data Analytics module. <a target="_blank" href="https://colab.research.google.com/github/Ange-Dvs/Princ_ODA/blob/64f1b6b6e948ce095219ce6dfc2f17c4e7617fcf/penguins.ipynb">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 The project analyses the [Palmers penguin dataset](https://allisonhorst.github.io/palmerpenguins/) looking at the variables within the dataset. The [raw](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv) version of the data was used for the project.
 
