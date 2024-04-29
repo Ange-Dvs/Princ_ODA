@@ -5,63 +5,99 @@ The *penguins.ipynb* Jupyter notebook contains the project for the Principal of 
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-The project analyses the [Palmers penguin dataset](https://allisonhorst.github.io/palmerpenguins/) looking at the variables within the dataset. The [raw](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv) version of the data was used for the project.
+It analyses the [Palmer penguins dataset](https://allisonhorst.github.io/palmerpenguins/) looking at the variables within the dataset. The [raw](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/penguins.csv) version of the data was used for the analysis.
 
-The notebook utilizes plots such as bar charts, histograms and scatter plots to visulise the data contained within the dataset.
+## Project summary: 
+### Data Analysis & Predictive Analysis:
+Pandas and NumPy are used to process and analyse the data from the dataset, allowing filtering and sorting of data based on specified criteria.
+These libraries also make it possible to calculate different insights like correlation and standard deviation. 
 
-Two of the variables in the dataset will also be analysed and the correlation discussed. For the purpose of this project we will look at the correlation between flipper length and body mass of the penguins.
+First the variables in the dataset are broken down to better understand the dataset and information within.  
+Then three key questions are addressed in the *penguins.ipynb* notebook with the help of the Pandas and NumPy libraries.  
+The spread per island and species inhabiting them will be assessed to see if any patterns are identified.  
+The distribution of body mass across the dataset will also be shown and analysed to see if the sex of the penguin has any affect on the distribution.  
+Correlation of the body mass and flipper length variables will be calculated and the species added as 3rd dimension to see if that affects the understanding of the correlation. 
+
+### Data Visualisation:
+Data Visualisation allows insights gained through the analysis to be represented visually using plots.  
+This helps make the findings more accessible with visual aids making it easier to understand patterns to aid in facilitating decision making. 
+
+Tabulate is used in the *penguins.ipynb* notebook to create basic tables to show data.
+Matplotlib is also used for data visualisation to create and customise plots.  
+
+More information on the methods used in the *penguins.ipynb* notebook from matplotlib (.pyplot & .ellipse) can be seen below under the "Libraries within Python" section.
 
 ## Software used: 
-This project was created using VS Code, python & GitHub.
+The software used for the creation of this project included VS Code, Python & GitHub.
 
-### Libaries within python: 
-Within the python code we are importing 3 modules at the beginning of the notebook to use throughout.
+### Libraries within python: 
+Within the program we are importing various external libraries and classes to use throughout the notebook including: 
+- pandas
+- matplotlib.pyplot
+- matplotlib.patches - Ellipse
+- NumPy
+- Tabulate
+
 #### pandas:
-Within the *penguins.ipynb* project the pandas library is used to read in the data from the palmers penguins dataset. 
-The corr() method is used in calculating the correlation coefficient of the variables flipper length and body mass in the dataset.[^1]
-groupby() method
-unstack() - https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.unstack.html#pandas.DataFrame.unstack
-.isna().sum() 
-.get()
-.std()
+Pandas[^1] is a library in Python used for data analysis which enables the use of two dimensional tables called DataFrames.  
+Within the *penguins.ipynb* notebook the pandas library is used to read in the data from the Palmers penguins dataset.  
+The following are some methods used throughout the project from pandas: 
+> .corr - used for calculating the correlation coefficient of the variables flipper length and body mass in the dataset.[^2]
 
-https://aaltoscicomp.github.io/python-for-scicomp/pandas/
-https://pandas.pydata.org/docs/user_guide/10min.html#min
-https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
+> .groupby - allows data to be grouped for analysis based on a common values. [^3]  
+
+> .unstack - used with the groups created with groupby() to arrange them in an organised manner. This allows us to create a stacked bar chart to visualise the data of the species per island.[^4] 
+
+>.isna - identified blank entries in the dataset.  
+
+> .get - uses a defined keyword to search and count how many times the keyword is found in the dataset, if the keyword isn't found a defined value is returned. [^5] 
+
+> .std - used to calculate the standard deviation in a DataFrame to determine the spread of the values for a variable from the mean. [^6]
 
 #### matplotlib.pyplot:
-The matplotlib.pyplot libray is used mainly for visual representation of dataset.
-The use of this library enables the user to create many types of plots including bar charts, histograms, line plots and scatter plot, all of which are displayed within the *penguins.ipynb* project.  
-With matplotlib.pyplot the user also has the possibility to save the graphs created by the program. 
-The user is also enabled to customize the charts to their liking with options to switch up the colour,[^2] markers,[^3] labels and titles[^4] of the plots.
-title() https://matplotlib.org/stable/gallery/text_labels_and_annotations/titles_demo.html
-axis label rotation - https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xticks.html#matplotlib-pyplot-xticks
-drawing an ellipse - https://matplotlib.org/stable/gallery/shapes_and_collections/ellipse_demo.html#ellipse-demo
-Ellipse - https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Ellipse.html#matplotlib-patches-ellipse
+The matplotlib.pyplot library is used mainly for visual representation of the dataset.
+This library enables the creation of many types of plots including bar charts, histograms, line plots and scatter plot, all of which are displayed within the *penguins.ipynb* notebook.  
+There is a high level of customisation possible with options to switch up the colour,[^7] markers,[^8] labels and titles of the plots.
 
-https://www.datacamp.com/tutorial/line-plots-in-matplotlib-with-python
+The following are some methods used throughout the project from matplotlib.pyplot: 
 
-#### numpy
-Numpy is a widely known Python libary in part for it's ability to facilitates basic and advanced arithmetic operations on large numbers of data and also for it's random number generating functionality.  When working with datasets numpy is useful due to it's ability to handle arrays and swiftly perform operations on them; like mathematical calution and sorting.[^5]  
-size method()
-.to_numpy()
+> .scatter - creates scatter plots to visualise the relationship between two variables by plotting markers on a graph where each marker represents an entry in the dataset.[^9]
 
+> .plot - used in the *penguins.ipynb* to create a simple line plots. [^10]
 
-https://www.geeksforgeeks.org/numpy-size-function-python/
+> .hist - creates histogram to represent distribution of values in a variable in the dataset.[^11]
 
-#### tabulate
+> .subplot - supports the creation of multiple plots in one figure. The number of plots which can be displayed is controlled by values entered for the number of columns and rows required. 
 
+> .xticks & .yticks - offers the ability to change the default tick settings on the x and y including the positivity to rotate the labels[^12]  and remove the ticks completely.[^13]
 
+> .xlabel & .ylabel - sets the heading for the axes and allows customisation of the font with the possibility to change the style, font and location of the labels. [^14] 
 
-## Project run through
+> .gca - allows you to retrieve the range for the x and y axes for a plot. [^15]
 
-### Customization of the plots
+> .xlim & .ylim - used for setting the limit of the x and y axis. This is useful when it's needed to overwrite the default value or range for the axes. [^16]
 
-## Supporting reading material:
-https://archive.ics.uci.edu/dataset/690/palmer+penguins-3
-https://allisonhorst.github.io/palmerpenguins/      
-https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.corr.html
-https://github.com/hackergrrl/art-of-readme
+> .figtext - used for adding text to plots. In *penguins.ipynb* it is used to set super-labels to axes which have a common variable to make the figure less cluttered and easier to read. [^17]
+
+> .figure - is used in *penguins.ipynb* to adjust the size of the figure, to ensure for figures with multiple plots that the plots are not overlapping or distorted and difficult to read. [^18]
+
+#### matplotlib.patches - Ellipse
+The ellipse class [^19] in matplotlib.patches makes it possible to add an ellipse shape to a plot. 
+In *penguins.ipynb* this is used to highlight a cluster of data. 
+The width, height, angle and line colour are all configurable allowing the shape to be set to suit the needs of the plot.  
+
+> add_patch - enables shapes to be added to a plot. In *penguins.ipynb* this is used with gca() to ensure the scale for the ellipse shape matches the scale for the orginal plot. [^20]
+
+#### NumPy
+NumPy is used in the *penguins.ipynb* notebook to facilitate arithmetic calculations on large numbers of data.  When working with datasets NumPy is useful for its ability to handle arrays and possibility to complete mathematical calculation and sorting.[^21]
+
+> .size - used with the groupby() function in *penguins.ipynb* to count the number of entries in the dataset for specified groups i.e. no. per island or no. per species [^22]
+
+> .to_numpy - used to convert the DataFrame to a NumPy array so that the data can be handled more efficiently for creating plots like histograms [^23]
+
+#### Tabulate
+Tabulate makes it possible to create formatted tables to present data from DataFrames and lists in a clear and concise way.  
+The table's appearance is customisable, with options to configure if the table has headers and if there are borders between the cells etc. [^24]
 
 ## Author
 **by Angela Davis**
@@ -69,10 +105,27 @@ https://github.com/hackergrrl/art-of-readme
 ***
 End
 
-[^1]: https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
-[^2]: https://matplotlib.org/stable/users/explain/colors/colors.html  
-[^3]: https://matplotlib.org/2.0.2/api/markers_api.html  
-[^4]: https://www.w3schools.com/python/matplotlib_labels.asp  
-[^5]: https://numpy.org/devdocs/user/
-
-
+[^1]: https://pandas.pydata.org/docs/user_guide/10min.html#min
+[^2]: https://www.geeksforgeeks.org/python-pandas-dataframe-corr/
+[^3]: https://www.geeksforgeeks.org/python-pandas-dataframe-groupby/
+[^4]: https://medium.com/@anala007/how-to-reshape-your-dataframe-with-pandas-stack-and-unstack-functions-3e2c86edc04a
+[^5]: https://www.w3schools.com/python/ref_dictionary_get.asp
+[^6]: https://numpy.org/doc/stable/reference/generated/numpy.std.html
+[^7]:  https://matplotlib.org/stable/users/explain/colors/colors.html 
+[^8]: https://matplotlib.org/2.0.2/api/markers_api.html  
+[^9]: https://www.w3schools.com/python/matplotlib_scatter.asp
+[^10]: https://www.datacamp.com/tutorial/line-plots-in-matplotlib-with-python
+[^11]: https://www.geeksforgeeks.org/matplotlib-pyplot-hist-in-python/
+[^12]: https://matplotlib.org/stable/gallery/ticks/ticklabels_rotation.html#sphx-glr-gallery-ticks-ticklabels-rotation-py
+[^13]: https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.xticks.html#matplotlib-pyplot-xticks
+[^14]: https://www.w3schools.com/python/matplotlib_labels.asp   
+[^15]: https://realpython.com/python-matplotlib-guide/#stateful-versus-stateless-approaches
+[^16]: https://www.geeksforgeeks.org/how-to-set-the-x-and-the-y-limit-in-matplotlib-with-python/
+[^17]: https://www.geeksforgeeks.org/matplotlib-pyplot-figtext-in-python/
+[^18]: https://www.geeksforgeeks.org/matplotlib-pyplot-figure-in-python/
+[^19]: https://matplotlib.org/stable/api/_as_gen/matplotlib.patches.Ellipse.html#matplotlib-patches-ellipse
+[^20]: https://matplotlib.org/stable/gallery/statistics/confidence_ellipse.html#sphx-glr-gallery-statistics-confidence-ellipse-py
+[^21]: https://numpy.org/devdocs/user/whatisnumpy.html
+[^22]: https://www.geeksforgeeks.org/numpy-size-function-python/
+[^23]: https://www.datacamp.com/tutorial/python-numpy-tutorial
+[^24]: https://www.analyticsvidhya.com/blog/2023/12/mastering-tabulate/
